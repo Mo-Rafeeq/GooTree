@@ -3,6 +3,7 @@ import './App.css';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Page404 from './pages/Page404';
+import Server500 from './pages/Server500';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<Signup />} />
+          <Route path="/500" element={<Server500 />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
 
