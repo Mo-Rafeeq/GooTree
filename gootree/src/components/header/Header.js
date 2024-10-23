@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import treelogo from '../../assets/logo/logoimg.png'
+import treelogo from '../../assets/logo/logo.png'
 const Header = () => {
   const [nav, setnav] = useState(false);
   const handleclick = () => {
@@ -8,13 +8,13 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full max-h-[50px] flex justify-between items-center font-serif absolute z-10  text-white bg-gray-700/80">
+    <div className="w-full max-h-[70px] flex justify-between items-center font-serif absolute z-10 border text-white px-4 py-3 ">
       
         {/* <h2>Gootree</h2> */}
-        <img width={100} height={300}  src={treelogo} alt="" />
+       <div className="m-2"> <img width={150} height={200}  src={treelogo} alt="logo" /></div>
       
        
-      <ul className="hidden sm:flex px-4 ">
+      <ul className="hidden sm:flex px-4 text-black">
         <li className="p-4">
           <a href="/">Home</a>
         </li>
@@ -32,7 +32,7 @@ const Header = () => {
         </li>
       </ul>
 
-      <div className="hidden sm:flex gap-2 mr-3">
+      <div className="hidden sm:flex gap-4 mr-3" style={{ color: "black" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
