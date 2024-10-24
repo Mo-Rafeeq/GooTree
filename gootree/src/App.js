@@ -1,5 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import Header from "./components/header/Header";
@@ -12,6 +16,8 @@ import React, { Suspense } from "react";
 const Home = React.lazy(() => import("./pages/Home"))
 const Login = React.lazy(() => import("./pages/Login"));
 const Signup = React.lazy(() => import("./pages/Signup"));
+
+
 
 function App() {
   return (

@@ -1,5 +1,7 @@
+import { div } from 'framer-motion/client';
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 
 const Page404 = () => {
   return (
@@ -14,6 +16,7 @@ const Page404 = () => {
         Go Back Home
       </Link>
     </div>
+       
   );
 };
 

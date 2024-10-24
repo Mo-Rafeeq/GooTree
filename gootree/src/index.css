@@ -1,3 +1,29 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.nav{
+    @apply w-full max-h-[70px] flex justify-between items-center font-serif absolute z-10 border-b border-gray-400 text-white px-4 py-3 
+}
+.main_h2{
+@apply text-center text-4xl font-serif mb-5 mt-5 text-green-900 
+}
+.row{
+    @apply max-w-xs rounded-md shadow-lg mx-3 my-5
+}
+.container{
+    @apply flex justify-center  items-center
+}
+.hero_h1{
+    @apply text-center text-4xl font-serif py-4
+}
+.container-hero{
+@apply flex justify-center  items-center
+}
+
+.hero_p{
+@apply font-semibold mt-2
+}
+
