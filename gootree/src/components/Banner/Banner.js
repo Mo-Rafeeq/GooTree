@@ -23,14 +23,14 @@ const Banner = () => {
         {/* First Slide */}
         <div className='relative'>
           <img src={hero1} alt='banner' className='w-full object-cover ' />
-          <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-10  bg-black bg-opacity-50 '>
+          <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-10  bg-black bg-opacity-10 '>
             <div className='text-white'>
-              <h2 className='text-6xl font-serif text-lime-200'>Buy a Planter</h2>
-              <span className='text-6xl font-sans text-lime-200'>Get a Grow Light Free</span>
+              <h2 className='text-6xl font-serif text-lime-800'>Buy a Planter</h2>
+              <span className='text-6xl font-sans text-lime-700'>Get a Grow Light Free</span>
               <p className='text-md mt-4'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita temporibus hic placeat sit
               </p>
-              <button className='border rounded-md border-gray-500 px-3 py-2 mt-5 font-serif text-xl text-white bg-green-900 hover:bg-green-700'>
+              <button className='border rounded-md border-gray-500 px-3 py-2 mt-5  text-xl text-white bg-green-900 hover:bg-green-700'>
                 SHOP NOW
               </button>
             </div>
