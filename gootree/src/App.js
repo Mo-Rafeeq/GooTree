@@ -11,6 +11,7 @@ import Page404 from "./pages/Page404";
 import Server500 from "./pages/Server500";
 // import Home from './pages/Home';
 import React, { Suspense } from "react";
+import Footer from "./components/footer/Footer";
 
 // const Home = React.lazy(() => import("./pages/Home"));
 const Home = React.lazy(() => import("./pages/Home"))
@@ -42,6 +43,8 @@ function App() {
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Suspense>
+
+      <Footer/>
     </div>
   );
 }

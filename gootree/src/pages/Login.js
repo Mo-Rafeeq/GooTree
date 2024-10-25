@@ -36,6 +36,7 @@ const Login = () => {
           <div className="w-full max-w-md">
             <div className="text-center mb-6">
               <h2 className="text-2xl font-bold text-gray-700">LOGIN</h2>
+              <h1 className="gradient-text">register</h1>
             </div>
 
             <form>

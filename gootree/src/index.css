@@ -26,4 +26,15 @@
 .hero_p{
 @apply font-semibold mt-2
 }
+ .gradient-text {
+    font-size: 5rem; 
+    font-weight: bold;
+    /* background: linear-gradient(to bottom, #4A90E2, #28A745); */
+     background: linear-gradient(to bottom, #5292db, #89848b); 
+    /* background: linear-gradient(to bottom, rgba(44, 86, 238, 1), rgba(107, 135, 241, 1)); */
+    /* background: linear-gradient(90deg, #2C56EE 0%, #6B87F1 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
+  }
