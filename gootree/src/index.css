@@ -13,18 +13,18 @@
 .row{
     @apply max-w-xs rounded-md shadow-lg mx-3 my-5
 }
-.container{
+/* .container{
     @apply flex justify-center  items-center
-}
+} */
 .hero_h1{
-    @apply text-center text-4xl font-serif py-4
+    @apply text-center text-4xl font-serif py-4 text-green-900
 }
 .container-hero{
 @apply flex justify-center  items-center
 }
 
 .hero_p{
-@apply font-semibold mt-2
+@apply font-semibold mt-2 text-green-900
 }
  .gradient-text {
     font-size: 5rem; 
@@ -38,3 +38,62 @@
     background-clip: text;
 
   }
+
+  .form-control {
+    border-radius: 35px;
+    height: 48px;
+    padding-left: 50px;
+    border: 1px solid rgba(226, 223, 223, 1);
+    background-color: rgba(217, 220, 219, 0.25);
+}
+
+.form_login {
+    margin-top: 35px;
+}
+
+.form-group {
+    position: relative;
+}
+.login_text {
+    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size:25px;
+
+}
+
+
+
+  
+
+
+
+/* Gradient Icon Styling with Fallback Color */
+/* .icon-gradient {
+    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #2C56EE; 
+    color: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
+    font-size: 25px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
+.icon-gradient {
+    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
+    -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="ICON_PATH_HERE"/></svg>');
+    mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="ICON_PATH_HERE"/></svg>');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 25px;
+    height: 25px;
+  }
+  
+
+
+
+
