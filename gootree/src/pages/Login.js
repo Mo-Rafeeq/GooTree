@@ -7,6 +7,7 @@ import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 
 
+
 const Login = () => {
 
   const [password, setPassword] = useState("");
@@ -24,14 +25,14 @@ const Login = () => {
   };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      {/* Combined Container */}
+    
       <div className="flex w-full max-w-3xl h-full bg-white shadow-md rounded-lg overflow-hidden">
-        {/* Left Side: Image */}
+        
         <div className="w-1/2 h-auto">
           <img className="object-cover w-full h-full" src={logo} alt="Logo" />
         </div>
 
-        {/* Right Side: Form */}
+    
         <div className="w-1/2 p-10 flex items-center justify-center">
           <div className="w-full max-w-md">
             <div className="text-center mb-6">
@@ -81,8 +82,112 @@ const Login = () => {
         </div>
       </div>
     </div>
+
+
+
+
+
+
   );
 };
 
 export default Login;
 
+// import { LuLock, LuUser2, LuEye, LuEyeOff } from "react-icons/lu"; 
+
+// const GradientIcon = ({ Icon }) => (
+//   <svg
+//     width="25"
+//     height="25"
+//     viewBox="0 0 24 24"
+//     style={{
+//       position: "absolute",
+//       left: "10px",
+//       top: "50%",
+//       transform: "translateY(-50%)",
+//     }}
+//   >
+//     <defs>
+//       <linearGradient id="iconGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+//         <stop offset="0%" stopColor="#2C56EE" />
+//         <stop offset="100%" stopColor="#999999" />
+//       </linearGradient>
+//     </defs>
+//     <Icon
+//       stroke="url(#iconGradient)" 
+//       strokeWidth="2" 
+//       fill="none" 
+//     />
+//   </svg>
+// );
+
+// const LoginForm = () => {
+//   const [password, setPassword] = useState("");
+//   const [type, setType] = useState("password"); 
+//   const [icon, setIcon] = useState(<LuEyeOff />); 
+
+//   const handleToggle = () => {
+//     if (type === "password") {
+//       setIcon(<LuEye />); 
+//       setType("text"); 
+//     } else {
+//       setIcon(<LuEyeOff />); 
+//       setType("password"); 
+//     }
+//   };
+
+//   return (
+//     <div className="min-h-screen flex items-center justify-center p-9">
+//       <form className="form_login">
+//         {/* User Icon */}
+//         <div className="form-group mb-2">
+//           <div className="relative">
+//             <GradientIcon Icon={LuUser2} />
+//             <input
+//               type="email"
+//               id="email"
+//               className="form-control pl-10"
+//               placeholder="User name or Email"
+//               required
+//             />
+//           </div>
+//         </div>
+
+//         {/* Lock Icon with Eye Icon */}
+//         <div className="form-group mt-4 mb-3 relative">
+//           <GradientIcon Icon={LuLock} />
+//           <input
+//             type={type} 
+//             id="password"
+//             className="form-control pl-10"
+//             placeholder="Password"
+//             value={password}
+//             onChange={(e) => setPassword(e.target.value)} 
+//             required
+//           />
+//           <span
+//             style={{
+//               position: "absolute",
+//               right: "15px",
+//               top: "50%",
+//               transform: "translateY(-50%)",
+//               cursor: "pointer",
+//             }}
+//             onClick={handleToggle} 
+//           >
+//             <GradientIcon Icon={icon.type} /> 
+//           </span>
+//         </div>
+
+        
+//         <div className="login_forgot mt-4">
+//           <a className="login_forgot_text" href="">Forget Password?</a>
+//         </div>
+
+//         <button className="btn_login w-100 mt-4">Login</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default LoginForm;
