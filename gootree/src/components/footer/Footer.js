@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <h1 className="font-semibold text-2xl mb-4">Contact</h1>
           <form className="flex flex-col items-center">
-            <p className="mb-3">Hikikngo@gmail.com</p>
+            <p className="mb-3">gootree@gmail.com</p>
             <input
               type="email"
               placeholder="Enter your email address"
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-500 mt-8 pt-4 text-center">
-        <p>&copy; 2024 Hiking go. All rights reserved.</p>
+        <p>&copy;2024GooTree. All rights reserved.</p>
       </div>
     </div>
   );

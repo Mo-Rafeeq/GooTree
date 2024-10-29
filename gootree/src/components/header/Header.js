@@ -19,7 +19,7 @@ const Header = () => {
         <img width={150} height={200} src={treelogo} alt="logo" />
       </div>
 
-      <ul className="hidden sm:flex px-4 text-black">
+      <ul className="hidden sm:flex px-4 text-green-900">
         <li className="p-4 ">
           <a href="/">Home</a>
         </li>
