@@ -65,7 +65,7 @@ import SpaIcon from '@mui/icons-material/Spa';
 function HeroSection3() {
   return (
     <div className="relative bg-orange-100 p-5 md:p-10 flex flex-col md:flex-row justify-center items-center">
-      <div className="relative top-0 left-0 w-full md:w-1/2 h-full flex flex-col items-center text-black md:p-10">
+      <div className="relative top-0 left-0 w-full md:w-1/2 h-full flex flex-col items-center text-black md:p-10 ">
         <div className="mb-6 text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-serif mb-4">Decorate your <br className="hidden md:block" /> Home with plants</h2>
           <p className="max-w-lg text-sm md:text-base ">

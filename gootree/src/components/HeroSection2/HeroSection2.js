@@ -36,9 +36,9 @@ export const HeroSection2 = () => {
         ))}
       </div> */}
      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-2">
-      <div className="relative">
+      <div className="relative  overflow-hidden group">
         <img className="w-full object-cover h-auto" src={gg} alt="" />
-        <div className="absolute w-full h-60 top-0 left-0  p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-30">
+        <div className="absolute w-full h-60 top-0 left-0  p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-40">
         <p className="text-md text-gray-700">FRESH FLOWER</p>
         <h2 className="text-2xl font-semibold">Hanging plants</h2>
           <button className="mt-5 border-b-2 border-b-black  px-2 py-1 text-green-800">SHOP NOW</button>
@@ -47,9 +47,9 @@ export const HeroSection2 = () => {
 
       </div>
 
-      <div className="relative">
+      <div className="relative  overflow-hidden group">
         <img className="w-full object-cover h-auto" src={g} alt="" />
-        <div className="absolute top-0 left-0 w-full h-60   p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-30">
+        <div className="absolute  top-0 left-0 w-full  h-60 mt-2  p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-40">
         <p className="text-md text-gray-700">SALE OFF</p>
         <h2 className="text-2xl font-semibold">Indoor Plants</h2>
           <button className="mt-5 border-b-2 border-b-black  px-2 py-1 text-green-800">SHOP NOW</button>
@@ -58,9 +58,10 @@ export const HeroSection2 = () => {
 
       </div>
 
-      <div className="relative">
+      <div className="relative  overflow-hidden group">
         <img className="w-full object-cover h-auto" src={fg} alt="" />
-        <div className="absolute top-0 left-0 w-full h-60   p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-30">
+        <div className="absolute 
+         top-0 left-0 w-full h-60   p-8 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-slate-100 hover:bg-opacity-40">
           <p className="text-md text-gray-700">JUST FOR YOU</p>
           <h2 className="text-2xl font-semibold">Outdoor plants</h2>
           <button className="mt-5 border-b-2 border-b-black  px-2 py-1 text-green-800">SHOP NOW</button>
