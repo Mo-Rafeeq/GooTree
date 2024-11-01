@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import hero1 from '../../assets/Hero/hero.jpg';
 import hero2 from '../../assets/Hero/slider-5.jpg'; 
 import hero3 from '../../assets/Hero/slider-6.jpg'; 
+import '../Banner/Banner.css'
 
 const Banner = () => {
   const settings = {
