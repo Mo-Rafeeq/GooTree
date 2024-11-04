@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import croton from "../../assets/plants img/low maintaince/croton petra/croton petra.jpg";
 import zz from '../../assets/plants img/low maintaince/zz plant/zz plant1.jpg';
@@ -68,6 +67,32 @@ const bestSeller = [
     image: echeveria,
   },
 ];
+
+const Latest = [
+  {
+    name: "Croton petra",
+    rating: "4.8",
+    price: "299",
+    features:{s:"Moderate Water",d:"Low light"} ,
+    image: croton,
+  },
+  {
+    name: "zz plant",
+    rating: "4.9",
+    price: "259",
+    features:{s:"Moderate Water",d:"Low light"} ,
+    image: zz,
+  },
+  {
+    name: "italian stone pine",
+    rating: "4.8",
+    price: "199",
+    features:{s:"Moderate Water",d:"Low light"} ,
+    image: italianstonepine,
+  },
+  
+];
+
 
 function BestSellers() {
   const [showAll, setShowAll] = useState(false);

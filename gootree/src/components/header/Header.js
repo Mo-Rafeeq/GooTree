@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useLayoutEffect} from "react";
 import { FaBars } from "react-icons/fa";
 import treelogo from "../../assets/logo/logo.png";
 
@@ -7,12 +7,30 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 const Header = () => {
   const [nav, setnav] = useState(false);
+  const[scrolled,setscrolled]=useState(false)
   const handleclick = () => {
     setnav(!nav);
   };
 
+
+  useLayoutEffect(()=>{
+
+
+  const handleScroll=()=>{
+    if(window.scrollY>50){
+      setscrolled(true)
+    }else{
+      setscrolled(false)
+    }
+  }
+  window.addEventListener('scroll',handleScroll)
+  return()=>window.removeEventListener('scroll',handleScroll)
+
+ },[])
+
+
   return (
-    <div className="nav">
+    <div className={`nav transition-all duration-500 ${scrolled?'bg-black bg-opacity-30 shadow-lg':'bg-transparent'}`} >
       {/* <h2>Gootree</h2> */}
       <div className="m-2">
         {" "}

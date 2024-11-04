@@ -10,11 +10,13 @@ body,html{
 }
 
 .nav{
-    @apply w-full max-h-[70px] flex justify-between items-center font-serif absolute z-10 border-b border-gray-400 text-white px-4 py-3 
+    @apply w-full max-h-[70px] flex justify-between items-center font-serif fixed z-10  border-gray-400 text-white px-4 py-3 
 }
+
 .main_h2{
 @apply text-center text-4xl font-serif mb-5 mt-5 text-green-900 
 }
+
 .row{
     @apply max-w-xs rounded-md shadow-lg mx-3 my-5
 }
@@ -45,59 +47,40 @@ body,html{
 
   /* } */
 
-  .form-control {
-    border-radius: 35px;
-    height: 48px;
-    padding-left: 50px;
-    border: 1px solid rgba(226, 223, 223, 1);
-    background-color: rgba(217, 220, 219, 0.25);
+
+
+/* Fade-in effect with downward offset */
+.fade-in {
+  opacity: 0;
+  transform: translateY(100px); /* Start with an offset from the original position */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.form_login {
-    margin-top: 35px;
+.fade-in.animate {
+  opacity: 1;
+  transform: translateY(0); /* Move element to its original position */
 }
 
-.form-group {
-    position: relative;
-}
-.login_text {
-    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size:25px;
-
+/* Slide-in effect from the right */
+.slide-in {
+  opacity: 0;
+  transform: translateX(100px); /* Start offset to the right */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.slide-in.animate {
+  opacity: 1;
+  transform: translateX(0); /* Move element to its original position */
+}
+
+  
 
 
   
 
 
 
-/* Gradient Icon Styling with Fallback Color */
-/* .icon-gradient {
-    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #2C56EE; 
-    color: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
-    font-size: 25px;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-} */
-.icon-gradient {
-    background: linear-gradient(180deg, #2C56EE 0%, #999999 100%);
-    -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="ICON_PATH_HERE"/></svg>');
-    mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="ICON_PATH_HERE"/></svg>');
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    width: 25px;
-    height: 25px;
-  }
+
   
 
 
