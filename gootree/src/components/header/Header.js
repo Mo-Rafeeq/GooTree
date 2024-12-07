@@ -17,7 +17,7 @@ const Header = () => {
 
 
   const handleScroll=()=>{
-    if(window.scrollY>50){
+    if(window.scrollY>600){
       setscrolled(true)
     }else{
       setscrolled(false)
