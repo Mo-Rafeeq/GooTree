@@ -56,20 +56,25 @@ const Footer = () => {
           <h1 className="font-semibold text-2xl mb-4">Contact</h1>
           <form className="flex flex-col items-center md:items-start">
             <p className="mb-3">gootree@gmail.com</p>
+            
             <input
               type="email"
               placeholder="Enter your email address"
-              className="p-2 rounded border bg-green-900 w-60 text-black mb-2"
+              className="p-2 rounded border bg-green-900 w-60 text-black "
             />
-            <div className="flex justify-center mt-3 space-x-4">
+
+            <div className="flex justify-center md:ml-9 mt-3 space-x-4">
               <a href="#" className="text-white hover:text-blue-500"><FontAwesomeIcon icon={faFacebook} /></a>
               <a href="#" className="text-white hover:text-blue-700"><FontAwesomeIcon icon={faLinkedin} /></a>
               <a href="#" className="text-white hover:text-pink-500"><FontAwesomeIcon icon={faInstagram} /></a>
               <a href="#" className="text-white hover:text-blue-400"><FontAwesomeIcon icon={faTwitter} /></a>
               <a href="#" className="text-white hover:text-green-500"><FontAwesomeIcon icon={faWhatsapp} /></a>
             </div>
+
           </form>
+
         </div>
+
       </div>
 
       <div className="border-t border-gray-500 mt-8 pt-4 text-center">

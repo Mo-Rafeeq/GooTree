@@ -1,15 +1,15 @@
-
-import React from "react";
 import img1 from "../../assets/490x230-1.jpg";
 import img2 from "../../assets/490x230-2.jpg";
 import img3 from "../../assets/490x490.jpg";
 import img4 from "../../assets/bnr2-4.jpg";
+import useAnimate from "../../utility/useAnimate";
 
 function Section4() {
+  const containerRef = useAnimate();
   return (
-    <div className="container mx-auto p-4 mt-14">
+    <div ref={containerRef} className="container mx-auto p-4 mt-14">
       <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-3">
-        <div className="relative">
+        <div className="relative fade-in">
           <img
             className="w-full h-auto object-cover rounded-md"
             src={img3}
@@ -24,7 +24,7 @@ function Section4() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative fade-in">
           <img
             className="w-full h-auto object-cover rounded-md"
             src={img1}
@@ -39,7 +39,7 @@ function Section4() {
           </div>
         </div>
 
-        <div className="relative  overflow-hidden">
+        <div className="relative fade-in overflow-hidden">
           <img
             className="w-full h-auto object-cover rounded-md"
             src={img2}
@@ -64,7 +64,7 @@ function Section4() {
             </div>
           </div>
        </div> */}
-        <div className="relative md:col-start-2 md:col-span-2 md:-mt-64  overflow-hidden ">
+        <div className="relative md:col-start-2 md:col-span-2 md:-mt-64 fade-in  overflow-hidden ">
           <img
             className="w-full h-[240px] object-cover rounded-md"
             src={img4}

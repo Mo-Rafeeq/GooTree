@@ -12,6 +12,8 @@ import Server500 from "./pages/Server500";
 // import Home from './pages/Home';
 import React, { Suspense } from "react";
 import Footer from "./components/footer/Footer";
+import Allplants from "./pages/Allplants";
+import PlantView from "./pages/PlantView";
 
 // const Home = React.lazy(() => import("./pages/Home"));
 const Home = React.lazy(() => import("./pages/Home"))
@@ -36,11 +38,20 @@ function App() {
         }
       >
         <Routes>
+          
           <Route path="/" element={<Home />} />
+          {/* <Route path="/allplants" element={<Allplants/>} >
+           <Route path=":plantid" element={<PlantView/>}/>
+          </Route> */}
+           <Route path="/allplants" element={<Allplants/>}/>
+           <Route path="/plant" element={<PlantView/>}/>
+
           <Route path="/login" element={<Login />} />
+          
           <Route path="/register" element={<Signup />} />
           <Route path="/500" element={<Server500 />} />
           <Route path="*" element={<Page404 />} />
+
         </Routes>
       </Suspense>
 
